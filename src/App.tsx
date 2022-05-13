@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+const logo = 'https://img1.baidu.com/it/u=536263542,3428748979&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-v-cc App">
+      <div className="qq-app">
+        <header>QQ号查询</header>
+        <div className="flex flex-h-lc qq-search">
+          <span>QQ: </span>
+          <input className="flex-1" type="text" />
+        </div>
+        <div className="flex flex-h-lc qq-info">
+          <div className="qq-info__avatar" style={{ backgroundImage: `url(${logo})` }}></div>
+          <div className="flex-1 flex flex-v-sa qq-info__detail">
+            <div>叛逆的小孩</div>
+            <div>3847555</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
