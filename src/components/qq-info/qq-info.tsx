@@ -1,4 +1,5 @@
 import React from 'react';
+import './qq-info.css';
 import { QQInfoType } from '../../types/qq.types';
 
 function QqInfo(props: QQInfoType) {
