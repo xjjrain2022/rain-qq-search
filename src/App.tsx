@@ -34,12 +34,8 @@ function App() {
       return;
     }
 
-    // 对请求来QQ数据和当前输入的QQ做一次校验，保证显示的是正确的qq信息
-    console.log('qq: ', qq, debounceQQ, res.qq);
-    if (res.qq === qq) {
-      setInfo(res);
-      setErrorMsg('');
-    }
+    setInfo(res);
+    setErrorMsg('');
   };
 
   // 修改了输入框的QQ号
