@@ -1,0 +1,92 @@
+@keyframes icon-qq-loading {
+  50% {
+      opacity: .3;
+      transform: scale(.4);
+      transform: scale(.4)
+  }
+
+  100% {
+      opacity: 1;
+      transform: scale(1);
+      transform: scale(1)
+  }
+}
+
+.icon-qq-loading {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  /* top: -10px;
+  left: -10px; */
+  transform: scale(0.3);
+}
+
+.icon-qq-loading>div:nth-child(1) {
+  top: 25px;
+  left: 0;
+  animation: icon-qq-loading 1s -.96s infinite linear;
+  animation: icon-qq-loading 1s -.96s infinite linear
+}
+
+.icon-qq-loading>div:nth-child(2) {
+  top: 17.05px;
+  left: 17.05px;
+  animation: icon-qq-loading 1s -.84s infinite linear;
+  animation: icon-qq-loading 1s -.84s infinite linear
+}
+
+.icon-qq-loading>div:nth-child(3) {
+  top: 0;
+  left: 25px;
+  animation: icon-qq-loading 1s -.72s infinite linear;
+  animation: icon-qq-loading 1s -.72s infinite linear
+}
+
+.icon-qq-loading>div:nth-child(4) {
+  top: -17.05px;
+  left: 17.05px;
+  animation: icon-qq-loading 1s -.6s infinite linear;
+  animation: icon-qq-loading 1s -.6s infinite linear
+}
+
+.icon-qq-loading>div:nth-child(5) {
+  top: -25px;
+  left: 0;
+  animation: icon-qq-loading 1s -.48s infinite linear;
+  animation: icon-qq-loading 1s -.48s infinite linear
+}
+
+.icon-qq-loading>div:nth-child(6) {
+  top: -17.05px;
+  left: -17.05px;
+  animation: icon-qq-loading 1s -.36s infinite linear;
+  animation: icon-qq-loading 1s -.36s infinite linear
+}
+
+.icon-qq-loading>div:nth-child(7) {
+  top: 0;
+  left: -25px;
+  animation: icon-qq-loading 1s -.24s infinite linear;
+  animation: icon-qq-loading 1s -.24s infinite linear
+}
+
+.icon-qq-loading>div:nth-child(8) {
+  top: 17.05px;
+  left: -17.05px;
+  animation: icon-qq-loading 1s -.12s infinite linear;
+  animation: icon-qq-loading 1s -.12s infinite linear
+}
+
+.icon-qq-loading>div,.ball-spin-loader>div {
+  animation-fill-mode: both;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%
+}
+
+.icon-qq-loading>div {
+  background-color: #47b897;
+  margin: 2px;
+  animation-fill-mode: both
+}

@@ -3,8 +3,10 @@
   padding: 0;
   line-height: 1;
   font-size: 16px;
+  box-sizing: border-box;
   font-family: Arial,sans-serif;
 }
+
 .flex {
   display: flex;
 }
@@ -68,7 +70,7 @@
 
 
 .qq-app {
-  width: 300px;
+  width: 360px;
   border-radius: 6px;
   padding: 20px 30px 30px;
   background: #fff;
@@ -87,15 +89,26 @@
 }
 .qq-search input {
   display: block;
+  width: 100%;
+  position: relative;
   height: 20px;
-  padding: 2px;
+  padding: 2px 20px 2px 2px;
   outline: none;
   border: none;
   border-bottom: 1px solid #333;
+  background: transparent;
 }
 .qq-search input:focus {
   border-bottom: 1px solid blue;
 }
+.qq-search .qq-search__input {
+  position: relative;
+}
+.qq-search .qq-search__loading {
+  position: absolute;
+  right: 0;
+}
+
 .qq-info {
   border-radius: 8px;
   border: 1px solid #333;
@@ -111,6 +124,6 @@
   margin-right: 14px;
   border-radius: 100%;
 }
-.qq-info__detail {
-
+.qq-error-msg {
+  color: red;
 }
